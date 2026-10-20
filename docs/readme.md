@@ -1,15 +1,39 @@
-# i just need to remember these ocmmands
+# PlatformIO Commands
 
-run from root: 
+Run all commands from the project root directory.
 
-BUILD: 
-~/.venvs/platformio/bin/pio run --project-conf cdpr_teensy.ini
+## BUILD
+
+**Linux:**
+```bash
 ~/.venvs/platformio/bin/pio run
+```
 
-UPLOAD: 
-~/.venvs/platformio/bin/pio run --project-conf cdpr_teensy.ini -t upload
+**macOS:**
+```bash
+~/.platformio/penv/bin/pio run
+```
+
+## UPLOAD
+
+**Linux:**
+```bash
 ~/.venvs/platformio/bin/pio run -t upload
+```
 
+**macOS:**
+```bash
+~/.platformio/penv/bin/pio run -t upload
+```
 
-to see serial output:
+## SERIAL MONITOR
+
+**Linux:**
+```bash
 ~/.venvs/platformio/bin/pio device monitor --project-dir . --baud 115200
+```
+
+**macOS:**
+```bash
+~/.platformio/penv/bin/pio device monitor --project-dir . --baud 115200
+```
